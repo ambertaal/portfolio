@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.hero {
+  font-size: 1.2rem;
+  margin: 3rem 10rem;
+}
+
+.hero__info {
+  text-align: left;
+  padding: 0.9rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.hero__text {
+  margin: 0.2rem;
+}
+
+.hero__image-container {
+  width: 50%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hero__image {
+  width: 100%;
+  vertical-align: top;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f1db51;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  padding: 16px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 42px 15px 15px 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.section-title {
+  color: black;
+  text-align: center;
+}
+
+#projects {
+  background-color: #e3e8f0;
+  padding: 10rem;
+}
+
+.project {
+  background: #f2e37f;
+  text-align: center;
+  padding: 0;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project__title {
+  color: black;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+@media (min-width: 40rem) {
+  .project__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+}
